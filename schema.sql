@@ -701,28 +701,44 @@ begin
       (biz,'tho_phu',1,0.03,0.05),(biz,'tho_phu',2,0.05,0.07);
 
     insert into public.services(business_id, name, group_name, price, duration_min, commission_type, needs_review, sort) values
-      (biz,'Cắt + gội + tạo kiểu','Dịch vụ chính',150000,60,'truc_tiep',false,1),
-      (biz,'Gội','Dịch vụ chính',60000,30,'ho_tro',false,2),
-      (biz,'Uốn','Dịch vụ chính',600000,150,'truc_tiep',false,3),
-      (biz,'Duỗi','Dịch vụ chính',600000,150,'truc_tiep',false,4),
-      (biz,'Nhuộm','Dịch vụ chính',600000,120,'truc_tiep',false,5),
-      (biz,'Tẩy','Dịch vụ chính',600000,120,'truc_tiep',true,6),
-      (biz,'Balayage','Dịch vụ chính',2500000,240,'truc_tiep',true,7),
-      (biz,'Nâng sáng','Tẩy tóc',300000,90,'truc_tiep',false,10),
-      (biz,'Bóc đen / đỏ','Tẩy tóc',500000,120,'truc_tiep',true,11),
-      (biz,'Tẩy nối','Tẩy tóc',600000,120,'truc_tiep',true,12),
-      (biz,'Babylight','Tẩy tóc',800000,180,'truc_tiep',false,13),
-      (biz,'Highlight','Tẩy tóc',900000,180,'truc_tiep',false,14),
-      (biz,'Uốn / duỗi phồng chân','Dịch vụ lẻ',300000,90,'truc_tiep',false,20),
-      (biz,'Chấm chân tóc','Dịch vụ lẻ',300000,60,'truc_tiep',false,21),
-      (biz,'Phục hồi Mielle Almighty Cocktail','Phục hồi',600000,60,'truc_tiep',false,30),
-      (biz,'Phục hồi 3 bước Milbon Deesse''s','Phục hồi',900000,75,'truc_tiep',false,31),
-      (biz,'Phục hồi 3C Labios Collagen','Phục hồi',1200000,90,'truc_tiep',false,32),
-      (biz,'Combo cắt + uốn + nhuộm + Mielle','Combo',1500000,240,'truc_tiep',false,40),
-      (biz,'Combo cắt + uốn + nhuộm + Milbon','Combo',1800000,255,'truc_tiep',false,41),
-      (biz,'Tẩy + nhuộm màu sáng','Màu sáng',2100000,240,'truc_tiep',true,50),
-      (biz,'Tẩy + nhuộm màu sáng + Milbon','Màu sáng',2600000,270,'truc_tiep',true,51),
-      (biz,'Nối tóc lông vũ (theo tép, bao công liên hệ)','Nối tóc',0,0,'noi_tep',true,60);
+      (biz,'Uốn','Dịch vụ chính',600000,150,'truc_tiep',false,1),
+      (biz,'Duỗi','Dịch vụ chính',600000,150,'truc_tiep',false,2),
+      (biz,'Nhuộm','Dịch vụ chính',600000,120,'truc_tiep',false,3),
+      (biz,'Tẩy','Dịch vụ chính',600000,120,'truc_tiep',true,4),
+      (biz,'Nâng sáng','Kỹ thuật màu & tẩy tóc',300000,90,'truc_tiep',false,5),
+      (biz,'Phủ màu','Kỹ thuật màu & tẩy tóc',500000,90,'truc_tiep',false,6),
+      (biz,'Bóc đen / đỏ','Kỹ thuật màu & tẩy tóc',600000,120,'truc_tiep',true,7),
+      (biz,'Nhuộm nâng tông','Kỹ thuật màu & tẩy tóc',600000,120,'truc_tiep',false,8),
+      (biz,'Dặm sáng / Highlight (Babylight)','Kỹ thuật màu & tẩy tóc',900000,180,'truc_tiep',false,9),
+      (biz,'Highlight','Kỹ thuật màu & tẩy tóc',1100000,180,'truc_tiep',false,10),
+      (biz,'Balayage','Kỹ thuật màu & tẩy tóc',2500000,240,'truc_tiep',true,11),
+      (biz,'Gội sạch','Dịch vụ lẻ',60000,30,'ho_tro',false,12),
+      (biz,'Sấy tạo kiểu — 100.000đ','Dịch vụ lẻ',100000,30,'truc_tiep',false,13),
+      (biz,'Sấy tạo kiểu — 150.000đ','Dịch vụ lẻ',150000,45,'truc_tiep',false,14),
+      (biz,'Cắt + gội + tạo kiểu','Dịch vụ lẻ',150000,60,'truc_tiep',false,15),
+      (biz,'Uốn / nhuộm nam','Dịch vụ lẻ',300000,90,'truc_tiep',false,16),
+      (biz,'Uốn mái / phá ngôi','Dịch vụ lẻ',300000,60,'truc_tiep',false,17),
+      (biz,'Dập phồng chân tóc','Dịch vụ lẻ',300000,90,'truc_tiep',false,18),
+      (biz,'Bảo vệ tóc','Dịch vụ lẻ',300000,30,'truc_tiep',false,19),
+      (biz,'Nhuộm dặm chân tóc','Dịch vụ lẻ',300000,60,'truc_tiep',false,20),
+      (biz,'Duỗi viền','Dịch vụ lẻ',350000,60,'truc_tiep',false,21),
+      (biz,'Duỗi chân','Dịch vụ lẻ',400000,90,'truc_tiep',false,22),
+      (biz,'Phục hồi Mielle Almighty Cocktail','Phục hồi / chăm sóc tóc',600000,60,'truc_tiep',false,23),
+      (biz,'Phục hồi Keratin','Phục hồi / chăm sóc tóc',1100000,90,'truc_tiep',false,24),
+      (biz,'Phục hồi 3C Labios Collagen','Phục hồi / chăm sóc tóc',1200000,90,'truc_tiep',false,25),
+      (biz,'Phục hồi Keratherapy','Phục hồi / chăm sóc tóc',1600000,90,'truc_tiep',false,26),
+      (biz,'Combo cắt + uốn + nhuộm + Mielle','Combo tiết kiệm',1500000,240,'truc_tiep',false,27),
+      (biz,'Combo cắt + uốn + nhuộm + Milbon','Combo tiết kiệm',1800000,255,'truc_tiep',false,28),
+      (biz,'Tẩy + nhuộm màu sáng','Combo tiết kiệm',2100000,240,'truc_tiep',true,29),
+      (biz,'Tẩy + nhuộm màu sáng + Milbon','Combo tiết kiệm',2600000,270,'truc_tiep',true,30),
+      (biz,'Nối tóc lông vũ đen 40cm (giá / tép)','Tóc nối giá xưởng',14000,0,'noi_tep',true,31),
+      (biz,'Nối tóc lông vũ tẩy 40cm (giá / tép)','Tóc nối giá xưởng',26000,0,'noi_tep',true,32),
+      (biz,'Nối tóc lông vũ đen 50cm (giá / tép)','Tóc nối giá xưởng',16000,0,'noi_tep',true,33),
+      (biz,'Nối tóc lông vũ tẩy 50cm (giá / tép)','Tóc nối giá xưởng',29000,0,'noi_tep',true,34),
+      (biz,'Nối tóc lông vũ đen 60cm (giá / tép)','Tóc nối giá xưởng',18000,0,'noi_tep',true,35),
+      (biz,'Nối tóc lông vũ tẩy 60cm (giá / tép)','Tóc nối giá xưởng',33000,0,'noi_tep',true,36),
+      (biz,'Nối tóc lông vũ đen 70cm (giá / tép)','Tóc nối giá xưởng',20000,0,'noi_tep',true,37),
+      (biz,'Nối tóc lông vũ tẩy 70cm (giá / tép)','Tóc nối giá xưởng',38000,0,'noi_tep',true,38);
   end if;
 end $$;
 
@@ -973,3 +989,4 @@ on conflict do nothing;
 
 -- Lấy mã doanh nghiệp để dán vào index.html:
 select id as business_id, name from public.businesses;
+
